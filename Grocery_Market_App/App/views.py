@@ -10,5 +10,5 @@ class AppView(APIView):
     def get(self,request):
 
         api = App.objects.all()
-        serializer = UniqueSerializer(api,many=True)
+        serializer = AppSerializer(api,many=True)
         return Response(serializer.data)

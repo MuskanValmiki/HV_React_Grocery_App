@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+.home-page{
+    display: grid;
+    font-size: 2rem;
+    grid-column: 5/3;
+    justify-content: start;
+    align-items: center;
+    margin-top: 15rem;
+    margin-left: 38rem;
+    text-shadow: 2px 2px rgb(45, 198, 253);
+}
+
+/* Tables
+  =============== */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 100%; }
+  
+  thead th {
+    border-bottom: 2px solid #dedede; }
+  
+  tfoot th {
+    border-top: 2px solid #dedede; }
+  
+  td {
+    border-bottom: 1px solid #dedede; }
+  
+  th,
+  td {
+    text-align: left;
+    padding: .5rem; }
+  
+  caption {
+    padding: 1rem 0;
+    caption-side: bottom;
+    color: #ababab; }
+  
+  .striped-table tbody tr:nth-child(odd) {
+    background-color: #f8f8f8; }
+  
+  .contain-table {
+    overflow-x: auto; }
+  
+  @media (min-width: 600px) {
+    .contain-table {
+      width: 100%; } }
+
+
