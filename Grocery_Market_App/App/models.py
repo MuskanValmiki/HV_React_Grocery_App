@@ -8,4 +8,4 @@ class App(models.Model):
     shopTiming = models.CharField("Shop Timing", max_length=240)
 
     def __str__(self):
-        return self.id,self.name,self.location,self.shopTiming
+        return self.id,self.name,self.location,self.shopTiming  
