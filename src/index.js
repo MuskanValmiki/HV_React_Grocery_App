@@ -9,8 +9,6 @@ import App from "./App";
 import Uniques1 from "./pages/uniques1";
 import Unique from "./pages/unique";
 
-
-
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
