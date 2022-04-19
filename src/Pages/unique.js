@@ -1,10 +1,10 @@
 import { useParams} from "react-router-dom";
 import { useState, useEffect } from 'react';
-import { getUnique } from "../App";
+import { getUnique } from "./../App"
 import axios from "axios";
 
 
-export default function Unique() {
+export default function App() {
     const {data2Id} = useParams();
     const [itemData, setItemData] = useState({})
 
@@ -28,7 +28,7 @@ export default function Unique() {
     return (
       <main style={{ padding: "1rem" }}>
         <h1>{itemData.name}</h1>
-        <p>Location - {itemData.location}</p>  
+        <p>Location - {itemData.location}</p>
         <p>Timing - {itemData.timing}</p>
     </main>
     );

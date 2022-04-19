@@ -53,7 +53,7 @@ class App extends Component {
       <>
       <nav className="main-nav">
           <div className="website-name">
-              <h2> Grocery Market App</h2>    
+              <h2>Grocery Market App</h2>    
           </div>
       </nav>
     <table>
@@ -74,8 +74,7 @@ class App extends Component {
         })}
       </thead>
     </table>
-    <Outlet/>
-      
+    <Outlet/>    
   </>
     );
   }
