@@ -1,7 +1,10 @@
 import './App.css';
 import React,{Component} from 'react';
+import { findRenderedDOMComponentWithClass } from 'react-dom/test-utils';
 import {Link, Outlet} from "react-router-dom";
 import axios from "axios";
+
+
 
 class App extends Component {
   constructor (props){
@@ -11,8 +14,11 @@ class App extends Component {
       data:[],
       activeItem:{
         name:"",
-        location:"",
-        timing:"",
+        price:"",
+        category:"",
+        description:"",
+
+
       }
     };
   }
@@ -34,6 +40,7 @@ class App extends Component {
         });
   }
 
+
   details_list =()=>{
     axios
     .get("/data")
@@ -47,41 +54,45 @@ class App extends Component {
     })
   }
 
+  
   render (){
     return (
       <>
       <nav className="main-nav">
           <div className="website-name">
-              <h2>Grocery Market App</h2>    
+              <h2> Grocery Mart</h2>    
           </div>
       </nav>
     <table>
       <thead>
         <tr>
           <th>Name</th>
-          <th>Location</th>
-          <th>Timing</th>
+          <th>Price</th>
+          <th>Category</th>
         </tr>
         {this.state.data.map((val, key) => {
           return (
             <tr key={key}>
               <td><Link to ={`/data/${val.id}`} key={val.id}>{val.name} </Link> </td>
-              <td>{val.location}</td>                  
-              <td>{val.timing}</td>
+              <td>{val.price}</td>                  
+              <td>{val.category}</td>
             </tr>
           )
         })}
       </thead>
     </table>
-    <Outlet/>    
+    <Outlet/>
+      
   </>
     );
   }
 }
 
+
 export function getUniques1() {
   return [];
   }
+  
   
   export function getUnique(id) {
   return [].find(

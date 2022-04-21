@@ -27,9 +27,9 @@ html {
   height: 10rem;
   display: grid;
   grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
-  box-shadow: rgba(46, 218, 23, 0.726) 0px 50px 100px -20px,
-    rgba(19, 185, 197, 0.753) 0px 30px 60px -30px;
+  box-shadow: 10px 10px 16px 50px #888888;
 }
+
 .website-name{
     display: grid;
     font-size: 1.5rem;
@@ -37,7 +37,7 @@ html {
     justify-content: start;
     margin-left: -25rem;
     margin-top: 2rem;
-    text-shadow: 3px 3px rgb(69, 253, 45);
+    text-shadow: 2px 2px 8px #ababab;
 }
 
 .collumn{

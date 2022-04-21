@@ -1,7 +1,7 @@
 import { NavLink, Outlet} from "react-router-dom"
-import { getUniques1} from "../App";
+import {getUniques1} from "../App";
 
-function uniques1() {
+function apps1() {
   return (
     <div>
     <Outlet />
@@ -9,4 +9,5 @@ function uniques1() {
   )
 }
 
-export default uniques1;
+
+export default apps1;

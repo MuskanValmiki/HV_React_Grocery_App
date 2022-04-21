@@ -1,7 +1,7 @@
 import {render} from "react-dom";
 import {
   BrowserRouter,
-  Switch,
+  Routes,
   Route,
 }from "react-router-dom";
 import './index.css';
@@ -9,10 +9,12 @@ import App from "./App";
 import Uniques1 from "./pages/uniques1";
 import Unique from "./pages/unique";
 
+
+
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
-    <Switch>
+    <Routes>
       <Route exact path ="/" element={<App />} >
       <Route path ="/data" element={<Uniques1 />}>
         <Route path=":data2Id" element={<Unique />} />
@@ -26,7 +28,7 @@ render(
         }
       />
       </Route>
-    </Switch>
+    </Routes>
   </BrowserRouter>,
   rootElement
 );

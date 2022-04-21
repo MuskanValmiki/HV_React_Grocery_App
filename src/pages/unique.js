@@ -4,7 +4,7 @@ import { getUnique } from "../App";
 import axios from "axios";
 
 
-export default function App() {
+export default function Apps() {
     const {data2Id} = useParams();
     const [itemData, setItemData] = useState({})
 
@@ -28,8 +28,9 @@ export default function App() {
     return (
       <main style={{ padding: "1rem" }}>
         <h1>{itemData.name}</h1>
-        <p>Location - {itemData.location}</p>
-        <p>Timing - {itemData.timing}</p>
+        <p>Price - {itemData.price}</p>  
+        <p>Category - {itemData.category}</p>
+        <p>Description - {itemData.description}</p>
     </main>
     );
   
