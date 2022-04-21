@@ -1,10 +1,9 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
-from .serializers import UniqueSerializer
+from .serializers import AppSerializer
 from .models import App
 from rest_framework.response import Response
 from django.shortcuts import render, get_object_or_404
-from serializers import AppSerializer
 
 # Create your views here.
 
