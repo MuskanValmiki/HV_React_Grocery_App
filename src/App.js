@@ -1,6 +1,5 @@
 import './App.css';
 import React,{Component} from 'react';
-import { findRenderedDOMComponentWithClass } from 'react-dom/test-utils';
 import {Link, Outlet} from "react-router-dom";
 import axios from "axios";
 
@@ -15,7 +14,7 @@ class App extends Component {
       activeItem:{
         name:"",
         price:"",
-        category:"",
+        location:"",
         description:"",
 
 
@@ -68,14 +67,14 @@ class App extends Component {
         <tr>
           <th>Name</th>
           <th>Price</th>
-          <th>Category</th>
+          <th>Location</th>
         </tr>
         {this.state.data.map((val, key) => {
           return (
             <tr key={key}>
               <td><Link to ={`/data/${val.id}`} key={val.id}>{val.name} </Link> </td>
               <td>{val.price}</td>                  
-              <td>{val.category}</td>
+              <td>{val.location}</td>
             </tr>
           )
         })}

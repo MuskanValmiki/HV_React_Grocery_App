@@ -2,7 +2,7 @@
 
 
 *{
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
     font-family: "Jost", sans-serif;
@@ -23,21 +23,21 @@ html {
   
 
 .main-nav{
-    width: 100%;
-  height: 10rem;
+  width: 100%;
+  height: 8rem;
   display: grid;
-  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
-  box-shadow: 10px 10px 16px 50px #888888;
+  grid-template-columns: 8rem 1fr 2fr 1fr 10rem;
+  box-shadow:10px 60px #888888;
 }
 
 .website-name{
     display: grid;
-    font-size: 1.5rem;
+    font-size: 2rem;
     grid-column: 5/3;
     justify-content: start;
     margin-left: -25rem;
     margin-top: 2rem;
-    text-shadow: 2px 2px 8px #ababab;
+    text-shadow: 2px 2px 8px #888888;
 }
 
 .collumn{
@@ -62,7 +62,7 @@ html {
 }
 
 .collumn ul li:hover > a{
-    transform-origin: left;
+  transform-origin: left;
   color: rgba(0, 0, 3, 1);
   text-decoration: underline;
   transition: 0.5s;
@@ -75,7 +75,7 @@ html {
     align-items: center;
     margin-top: 15rem;
     margin-left: 38rem;
-    text-shadow: 2px 2px rgb(69, 253, 45);
+    text-shadow: 2px 2px #888888 (69, 253, 45);
 }
 
 /* **********css  for table***************  */
@@ -93,17 +93,17 @@ html {
   }
   
   thead th {
-    border-bottom: 2px solid #dedede;
+    border-bottom: 2px solid blue;
 
 
   }
   
   tfoot th {
-    border-top: 2px solid #dedede;
+    border-top: 2px solid blue;
   }
   
   td {
-    border-bottom: 1px solid #dedede;
+    border-bottom: 1px solid blue;
 
   }
   
