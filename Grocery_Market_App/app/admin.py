@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import App
 
 class AppAdmin(admin.ModelAdmin):
-    list_display = ('id','name', 'description', 'category','price')
+    list_display = ('id','name', 'description', 'location','price')
 
 # Register your models here.
 

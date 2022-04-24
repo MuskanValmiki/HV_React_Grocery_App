@@ -5,7 +5,7 @@ from django.db import models
 class App(models.Model):
     name = models.CharField(max_length=120)
     description = models.TextField()
-    category = models.CharField(max_length=120)
+    location = models.CharField(max_length=120)
     price = models.CharField(max_length=120)
 
 
